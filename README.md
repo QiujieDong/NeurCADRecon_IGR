@@ -2,15 +2,7 @@
 
 ### [Project](https://qiujiedong.github.io/publications/NeurCADRecon/) | [Paper](https://arxiv.org/pdf/2404.13420.pdf)
 
-**This repository is the official PyTorch implementation of our paper,  *NeurCADRecon: Neural Representation for Reconstructing CAD Surfaces by Enforcing Zero Gaussian Curvature*.**
-
-**This code is based on the SIREN, we also provide the implementation based on the IGR: [NeurCADRecon-IGR](https://github.com/QiujieDong/NeurCADRecon_IGR)**
-
-<img src='./assets/teaser.png'>
-
-## News
-- :fire: This paper was accepted by [ACM TOG (SIGGRAPH 2024)](https://arxiv.org/abs/2404.13420)
-- :star: July 29, 2024 (GMT -7): Gave a talk at [SIGGRAPH 2024](https://s2024.siggraph.org/) on NeurCADRecon.
+**This code is based on the IGR, we also provide the implementation based on the SIREN: [NeurCADRecon](https://github.com/QiujieDong/NeurCADRecon)**
 
 ## Requirements
 
@@ -21,30 +13,20 @@
 ## Installation
 
 ```
-git clone https://github.com/QiujieDong/NeurCADRecon.git
-cd NeurCADRecon
+git clone https://github.com/QiujieDong/NeurCADRecon_IGR.git
+cd NeurCADRecon_IGR
 ```
 
 ## Preprocessing
-Sampling and normalizing to [-0.5, 0.5]
 
-```
-cd pre_processing
-python pre_data.py
-```
-
-- gt_path: The ground truth mesh of the CAD model.
-- input_path: The input point cloud that need to be reconstructed.
-
+Referring to [NeurCADRecon](https://github.com/QiujieDong/NeurCADRecon).
 
 ## Overfitting
 
 ```angular2html
-cd surface_reconstruction
-python train_surface_reconstruction.py
+cd ./code/reconstruction
+python run.py
 ```
-All parameters are set in the ```surface_recon_args.py```.
-
 
 ## Cite
 

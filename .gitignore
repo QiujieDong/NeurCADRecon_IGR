@@ -1,0 +1,15 @@
+exps*
+code/.idea/
+code_temp
+code/__pycache__/
+*.aux
+*.log
+*.out
+out*
+err*
+*.gz
+*.pyc
+*DS_Store*
+*.csh
+.idea/
+
